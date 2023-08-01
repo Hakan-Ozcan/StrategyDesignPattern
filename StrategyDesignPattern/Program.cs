@@ -1,4 +1,5 @@
-﻿using StrategyDesignPattern;
+﻿using StrategyDesignPattern.Context;
+using StrategyDesignPattern.Strategies;
 
 public class Program
 {

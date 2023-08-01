@@ -5,8 +5,11 @@ Bu desen, farklı davranışları sınıflara kapsülleyerek algoritmayı seçil
 Strategy deseninde temel unsurlar şunlardır:
 
 Context (Bağlam): Davranışları kullanacak olan nesnedir. Uygulamanın ana mantığını içerir ve davranışları içeren bir referans tutar.
+
 Strategy (Strateji): Farklı davranışları tanımlayan arayüzdür ve davranışları uygulayan sınıflar bu arayüzü uygularlar.
+
 ConcreteStrategy (SomutStrateji): Strategy arayüzünü uygulayan ve belirli bir davranışı temsil eden sınıflardır.
+
 Bu örnekte, ShoppingCart sınıfı Context'i temsil ederken, IPaymentStrategy arayüzü ise ödeme stratejilerini temsil eder. 
 CreditCardPaymentStrategy ve BankTransferPaymentStrategy sınıfları ConcreteStrategy sınıflarıdır ve farklı ödeme yöntemlerini temsil ederler. 
 Kullanıcı, SetPaymentStrategy metoduyla ödeme stratejisini seçebilir ve Checkout metoduyla ödeme işlemini gerçekleştirir.
