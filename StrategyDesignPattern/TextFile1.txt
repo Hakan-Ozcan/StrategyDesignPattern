@@ -1,0 +1,13 @@
+﻿Strategy tasarım deseni, bir algoritmayı içeren bir dizi davranışı soyutlama ve farklı uygulamalar arasında
+değiştirmek için kullanılan bir davranışsal tasarım desenidir. 
+Bu desen, farklı davranışları sınıflara kapsülleyerek algoritmayı seçilebilir hale getirir ve böylece çalışma zamanında davranışları değiştirmeyi kolaylaştırır.
+
+Strategy deseninde temel unsurlar şunlardır:
+
+Context (Bağlam): Davranışları kullanacak olan nesnedir. Uygulamanın ana mantığını içerir ve davranışları içeren bir referans tutar.
+Strategy (Strateji): Farklı davranışları tanımlayan arayüzdür ve davranışları uygulayan sınıflar bu arayüzü uygularlar.
+ConcreteStrategy (SomutStrateji): Strategy arayüzünü uygulayan ve belirli bir davranışı temsil eden sınıflardır.
+Bu örnekte, ShoppingCart sınıfı Context'i temsil ederken, IPaymentStrategy arayüzü ise ödeme stratejilerini temsil eder. 
+CreditCardPaymentStrategy ve BankTransferPaymentStrategy sınıfları ConcreteStrategy sınıflarıdır ve farklı ödeme yöntemlerini temsil ederler. 
+Kullanıcı, SetPaymentStrategy metoduyla ödeme stratejisini seçebilir ve Checkout metoduyla ödeme işlemini gerçekleştirir.
+Bu sayede, farklı ödeme yöntemlerini rahatlıkla değiştirebilir ve kullanabilirsiniz.
